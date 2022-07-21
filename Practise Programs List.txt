@@ -1,0 +1,80 @@
+2,3,5,8,11,13,15,16,19,23,24,29
+
+
+
+
+1)list_1= [1,2,5,3,9,5,26,53,95,] , output should be the list and first index should be divided by second like respectively
+
+2)list_1= [1,2,5,3,9,5,26,53,95,] print list in reverse order(Prog_ListReverse.py)
+
+3)Write a code that all 0's in the list should move to right-side , list_1= [8,0,0,65,79,0,21,0,0,0,54,12](Prog_List_allzerosalignRight.py)
+
+4)String= "ffgyytuuugg" write a code to print that first unique character and position of that character
+
+5)list_1 = [1,2,10,3,4,2,5,6,8,9,11] write a code to print 1st & 2nd largest number from the list(Prog_1&2Large_List.py)
+
+
+
+6)Input ⇒ Welcome Yagna!  ,   given input string should be reversed, but the condition is that last
+                            special character and space between the words should be in its
+                            index position even after reversing the string
+ this is the expected output
+Output ⇒ angaYem ocleW!
+
+
+7)In given string vowels should be replaced with numbers, do it with for loop and Regex
+
+8)list_1=[1,12,3,4,4,3,2,5,6,5,6] write a program to print without repeated values from the list(List_without_Repeated.py)
+
+9)String_1="986758h49ghsdfe#$%@3h4" using Regex and looping get only numbers as output
+ 
+ 
+10)Input= [(2, 3), (4, 5), (6, 7), (2, 8)] each tuple should be multiply and output should be in list as below
+	Output: [6, 20, 42, 16]
+	
+
+11)Write a program using while loop to print prime numbers in between the range of given numbers(Prog_while_PrimeNumbers_withinrange.py)
+
+12)Using re write a program to validate ip address
+
+13)Write a program to count the duplicate characters in a string(string_count_duplicates.py)
+
+14)Read the file and print whether the given word is available or not
+
+15)Write a program for palindrome number and as well as word(Prog_palindrome.py)
+
+16)dict_1={1:2,2:4,3:6,4:8} write a program for swapping keys as values and viceversa(Dict_swapping.py)
+
+
+17)Print unique elements from the list
+
+18)Read 5 integer numbers using a single statement,without using loops
+
+19)Print a given word 5 times, with loop and without using loop(prog_read5integers_withoutloop.py)####Pending#####
+
+20)Write a program to count each element from the list that how many times each element was repeated(key:value)
+
+21)String1 = 'AB23GWS58TDE789WSC234MNO97899AD2BO' can you get the maximum number from the string using Regex
+
+22)tuple=(3,4,1,5,2) sort the elements output=(1,2,3,4,5)
+
+23)Write a program on fibonacci series(Prog_fibonacci.py)
+
+24)Write a program on factorial (Prog_factorial.py)
+
+25)Write program on list find sum of highest last three nums?
+	
+26)Take nested dictonary dict_1 = {"a": 1, "b": 2, "c":3, "d":{"f":4, "r":5, "g": 6}, "f":{"g":5}} i want value 6?	
+	
+27)Write function, pass an arugument as string in that count vowels?
+
+28)Write function, pass an arugument as string in that count consonats?	
+	
+29)Convert list of elements to string?	(ListTo_string.py)
+	
+30)Printing patterns
+
+.............................................
+...................................................
+
+18)Read 5 integer numbers using a single statement,without using loops
