@@ -1,6 +1,0 @@
-datetime module
-
-	We can handle Data objects by importing the module datetime and timedelta to work with dates.
-
-	datetime: module helps to find the present day by using the now() or today() method.
-	timedelta: class from datetime module helps to find the previous day date and next day date.
