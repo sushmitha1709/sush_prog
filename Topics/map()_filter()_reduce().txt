@@ -1,0 +1,39 @@
+1). The map() function:
+	The map() function is a higher-order function. As previously stated, this function accepts another function 
+	and a sequence of ‘iterables’ as parameters and provides output after applying the function to each iterable in the sequence. 
+	It has the following syntax:
+
+		SYNTAX: map(function, iterables)
+	
+	we can apply a condition in map(), it will give boolean(true,false) as output
+
+Lambda within map() functions:
+
+	Functions with no name are known as lambda functions. These functions are frequently used lambda functions as input function.
+
+	Note: based on condition it will give true or false as output
+		result1 = tuple(map(lambda x: x > 20, tup_lambda)) # (False, False, False, False, True, True, False, True, True)
+		we will apply arthimetic operations it will give integers or strings based on inputs
+		result1 = tuple(map(lambda x: x * 3, tup_lambda)) # (30, 60, 3, 12, 69, 102, 36, 201, 267) 	
+
+The filter() function:
+	The filter() function is used to generate an output list of values that return true when the function is called. 
+	It will work only the given condition is true and return values in the list
+	It has the following syntax:
+
+		SYNTAX: filter (function, iterables)
+	result2 = tuple(filter(lambda x: x > 11, tup_lambda)) # (20, 23, 34, 12, 67, 89)
+
+The reduce() function:
+	The reduce() function applies a provided function to ‘iterables’ and returns a single value, as the name implies.
+	
+	tup_lambda2 = (10,20,1,4,23,34,12,67,89)
+	#result3 = reduce(lambda x,y : x + y, tup_lambda2) # 260
+
+	reduce function will take multiple inputs and give only one output
+
+	# 5, 8, 10, 20, 50, 100  --> 5,8 replaced by 13
+	# 13, 10, 20, 50, 100  --> 13,10 = replaced by 23
+	#23, 20, 50, 100  --> 23,20 = replaced by 43
+	#43, 50, 100  --> 43,50 = replaced by 93
+	#93, 100  --> 93,100 = replaced by 193

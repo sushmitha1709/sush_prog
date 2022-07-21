@@ -1,0 +1,117 @@
+Comprehensions:
+	We can create new sequences using a given python sequence. This is called comprehension. 
+	It basically a way of writing a concise code block to generate a sequence which can be a list, dictionary, 
+	set or a generator by using another sequence.
+			(OR)
+	Comprehensions in Python provide us with a short and concise way to construct new sequences (such as lists, set, dictionary etc.) 
+	using sequences which have been already defined.
+ 
+	Python supports the following 4 types of comprehensions:
+		List Comprehensions
+		Dictionary Comprehensions
+		Set Comprehensions
+		Generator Comprehensions
+
+List Comprehensions : output_list = [var for var in input_list(or)range(1,10) if(condition)(optional)]
+
+Dictionary Comprehensions: output_dict = {key:value for (key:value) in input_list(or)range(1,10) if(condition)(optional)}
+				dict1 = {name:len(name) for name in names_list1 if len(name) > 4}
+				
+Set Comprehensions: output_set = {var for var in input_list(or)range(1,10) if(condition)(optional)}
+
+List to dictionary conversion example:
+
+	names_list1 = ["Sushma", "Balu", "Ramya", "Siva", "Sai", "Sangeetha", "Sravanthi", "Rama"]
+	
+	dict1 = {name:len(name) for name in names_list1 if len(name) > 4}
+	print(dict1)
+
+# list comprehension
+# Example 1:
+
+num_list = [10, 25, 16, 21, 54, 23, 56, 78]
+# normal code
+result_list = []
+for num in num_list:
+    if num % 3 != 0:
+        result_list.append(num)
+print(result_list)
+result_list = []
+#list [],dict {}, set{},generator ()
+
+'''
+# using list comprehension
+result_list = [num for num in num_list if num % 3 != 0]
+print(result_list)
+# O/P: [10, 25, 16, 23, 56]
+
+# Example 2:
+names_list = ["Sushma", "Balu", "Ramya", "Siva", "Sai", "Sangeetha", "Sravanthi", "Rama"]
+result_list1 = [name for name in names_list if len(name) > 4]
+print(result_list1)
+# O/P: ['Sushma', 'Ramya', 'Sangeetha', 'Sravanthi']
+
+# Example 3:
+output_list = [var ** 2 for var in range(1, 10)]# 1:1, 2:4,3:9
+# for var in range(1, 10):
+#    output_list.append(var ** 2)
+
+print("Output List using for loop:", output_list)
+# Output List using for loop: [1, 4, 9, 16, 25, 36, 49, 64, 81]
+'''
+# Dict Comprehensions
+# Example 1:
+names_list1 = ["Sushma", "Balu", "Ramya", "Siva", "Sai", "Sangeetha", "Sravanthi", "Rama"]
+dict1 = {name: len(name) for name in names_list1 if len(name) > 4}
+print(dict1)
+for name in names_list1:
+    if len(name) > 4:
+        dict1[name] = len(name)
+    # dict1.update(key1, val1)
+print(dict1)
+# O/P: {'Sushma': 6, 'Ramya': 5, 'Sangeetha': 9, 'Sravanthi': 9}
+'''
+# Example 2:
+# num_list = [10, 25, 16, 21, 54, 23, 56, 78]
+dict_num1 = {num: num * 2 for num in num_list if num % 3 != 0}
+print(dict_num1)
+# O/P:{10: 20, 25: 50, 16: 32, 23: 46, 56: 112}
+
+# Example 3:
+states_List = ["Telangana", "Andhra Pradesh", "Tamilanadu", "Karnataka"]
+capitals_List = ["Hyderabad", "Amaravathi", "Chennai", "Banglore"]
+states_capitals_dict = {key: value for (key, value) in zip(states_List, capitals_List)}
+print(states_capitals_dict)
+# O/P: {'Telangana': 'Hyderabad', 'Andhra Pradesh': 'Amaravathi', 'Tamilanadu': 'Chennai', 'Karnataka': 'Banglore'}
+
+# Set Comprehensions
+num_list1 = [10, 25, 10, 16, 21, 34, 21, 56, 23, 56, 78]
+result_set = set()
+result_set = {num * 2 for num in num_list1 if num % 3 != 0}
+print(result_set)
+# O/P: {32, 68, 46, 112, 50, 20}
+'''
+# comprehension
+list_2 = [5, 2, 6, 6] # 5 + 2+ 6+ 6
+output_list = []
+squares_1 = 1
+#i = 1, i = 0
+# for element in list_2:
+#     #sum = sum + element
+#     #mul = mul * element
+#     if element % 2 == 0:
+#         squares_1 = element ** 2
+#         output_list.append(squares_1)
+# print(output_list)
+#
+#
+# list_comp = [element ** 2 for element in list_2 if element % 2 == 0]
+# print(list_comp)
+for element in list_2:
+    if element > 4:
+        output_list.append(element)
+print(output_list)
+list_comp_1 = [element for element in list_2 if element > 4]
+print(list_comp_1)
+
+	

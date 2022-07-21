@@ -1,0 +1,15 @@
+Difference between List and Dictionary:
+ 
+
+			List							Dictionary
+
+1. List is a collection of index values pairs as that of array in c++.		Dictionary is a hashed structure of key and value pairs.
+
+2. List is created by placing elements in [ ] separated by commas “, “		Dictionary is created by placing elements in { } as “key”:”value”, 
+										each key value pair is separated by commas “, “
+
+3. The indices of list are integers starting from 0.				The keys of dictionary can be of any data type.
+
+4. The elements are accessed via indices.					The elements are accessed via key-values.
+	
+5. The order of the elements entered are maintained.				There is no guarantee for maintaining order.

@@ -1,0 +1,100 @@
+ lambda:
+	In Python, anonymous(nameless) function means that a function is without a name. 
+	As we already know that def keyword is used to define the normal functions and the 
+	lambda keyword is used to create anonymous functions. 
+	we use lambda functions when you need a small function for a short time
+	lambda functions are syntactically restricted to a single expression.
+	lambda functions used in map(),reduce(),filter() 
+	It has the following syntax:
+
+	Syntax:
+
+		lambda arguments : expression
+	sum_twoNum = lambda num1, num2 : num1 + num2
+	
+	g = lambda x: x*x*x
+	print(g(7)) o/p:343
+
+Terenary operator:
+	The ternary operator is a conditional operator, That is used to evaluate a condition and return either of the 
+	two values depending on the condition.
+	Use:
+		Ternary operator in python is an alternate way of writing if-else which is concise and simple.
+
+		It first evaluates the given condition, then executes expression based on the condition then returns the value.
+
+		The ternary operator is not always useful. It is helpful when you have only one statement to execute after the condition 
+		is evaluated.
+	Syntax:
+		[on_true] if [expression] else [on_false] 
+	
+	# Use of ternary operator
+	print(a if a > b else b)
+
+Strings in Python:
+
+	A string is a sequence of characters that can be a combination of 
+	letters, numbers, and special characters. It can be declared in python by 
+	using single quotes, double quotes, or even triple quotes.Strings are immutable, i.e., they cannot be changed.
+	In Python, Updation or deletion of characters from a String is not allowed. 
+	This will cause an error because item assignment or item deletion from a String is not supported.
+	Escaping Sequences:
+	# Escaping Single Quote
+	String1 = 'I\'m a "Geek"'
+	# Escaping Double Quotes
+	String1 = "I'm a \"Geek\""
+	# Printing Paths with the use of Escape Sequences
+	String1 = "C:\\Python\\Geeks\\"
+	# Printing Paths with the use of Tab
+	String1 = "Hi\tGeeks"
+	# Printing Paths with the use of New Line
+	String1 = "Python\nGeeks"
+	String1 = "|{:<10}|{:^10}|{:>10}|".format('Geeks', 'for', 'Geeks')
+	print("\nLeft, center and right alignment with Formatting: ")	o/p:Left, center and right alignment with Formatting:
+ 
+										|Geeks     |   for    |     Geeks|
+	string to list conversion: list_1 = string_1.split(" ")
+	print("#".join(list_1))
+String Slicing():
+	Slicing is used to access a range of characters in the String. 
+	syntax:
+		string[start:stop:step]
+Lists in Python:
+	
+	Lists are one of the most powerful data structures in python. Lists are sequenced data types.a list is a collection of things, enclosed in [ ] and separated by commas. 
+	A single list can contain strings, integers, as well as other objects. Lists can also be used for implementing stacks and queues. 
+	Lists are mutable, i.e., they can be altered once declared. The elements of list can be accessed using indexing and slicing operations.
+	
+	L = [1, "a" , "string" , 1+2] 
+	append() and extend() methods can only add elements at the end.
+	List.insert(3, 12)
+	List.insert(0, 'Geeks')
+	A list can be reversed by using the (.reverse) method.
+	mylist = [1, 2, 3, 4, 5, 'Geek', 'Python']
+	mylist.reverse()
+	The remove() method removes the specified item.Remove method in List will only remove the first occurrence of the searched element.
+	List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+	List.remove(5)
+	for i in range(1, 5):
+    	List.remove(i)
+	pop() function can also be used to remove and return an element from the list, but by default it removes only the last element of the list,
+	 to remove an element from a specific position of the List, the index of the element is passed as an argument to the pop() method.
+	List.pop()   List.pop(2)
+	
+Tuples in Python: 
+
+	A tuple is a sequence of immutable Python objects. Tuples are just like lists. tuples cannot be changed once declared. 
+	Tuples are usually faster than lists.
+
+	tup = (1, "a", "string", 1+2)
+	differences:
+	1.Methods that cannot be used for tuples: append(), insert(), remove(), pop(), clear(), sort(), reverse()
+	2.we generally use ‘tuples’ for heterogeneous (different) data types and ‘lists’ for homogeneous (similar) data types.
+	3.Iterating through a ‘tuple’ is faster than in a ‘list’.
+	4.‘Lists’ are mutable whereas ‘tuples’ are immutable.
+	5.Tuples that contain immutable elements can be used as a key for a dictionary.
+
+Sets:
+
+	In Python, a Set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. 
+	Set items cannot be accessed by referring to an index, since sets are unordered the items has no index. 

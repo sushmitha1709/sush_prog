@@ -1,0 +1,31 @@
+input (): 
+	This function first takes the input from the user and converts it into a string. The type of the returned object always 
+	will be <type ‘str’>. It does not evaluate the expression it just returns the complete statement as String. 
+	For example, Python provides a built-in function called input which takes the input from the user. 
+	When the input function is called it stops the program and waits for the user’s input. When the user presses enter, 
+	the program resumes and returns what the user typed. 
+raw_input():
+ 	This function works in older version (like Python 2.x). This function takes exactly what is typed from the keyboard, 
+	converts it to string, and then returns it to the variable in which we want to store it.
+The split():
+	the method in Python returns a list of strings after breaking the given string by the specified separator.
+	This function helps in getting multiple inputs from users. It breaks the given input by the specified separator. 
+	If a separator is not provided then any white space is a separator. Generally, users use a split() method to split 
+	a Python string but one can use it in taking multiple inputs.
+
+	Syntax : 
+
+		input().split(separator, maxsplit) 
+	# taking multiple inputs at a time 
+		x = [int(x) for x in input("Enter multiple values: ").split()]
+		print("Number of list is: ", x)
+Python print():
+	 function prints the message to the screen or any other standard output device.
+
+		Syntax: print(value(s), sep= ‘ ‘, end = ‘\n’, file=file, flush=flush)
+
+end == "":
+	In python, by default print() ends with new line "\n". But we don't want to print two print() statements in single line. In that case 
+	we can use "end" parameter in print().
+	print("geeks", end =" ")
+	print("geeksforgeeks")		o/p:"geeks geeksforgeeks", 

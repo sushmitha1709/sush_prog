@@ -1,0 +1,15 @@
+difference between range() & xrange():
+
+			range()							xrange()
+
+		Returns a list of integers.				Returns a generator object.
+
+		Execution speed is slower				Execution speed is faster.
+
+		Takes more memory as it keeps the 			Takes less memory as it keeps only one element at a time in memory.
+			entire list of elements in memory.
+
+		All arithmetic operations can be performed as it 	Such operations cannot be performed on xrange().
+			returns a list.
+
+		In python 3, xrange() is not supported.			In python 2, xrange() is used to iterate in for loops.

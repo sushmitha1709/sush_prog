@@ -1,0 +1,83 @@
+1)
+
+# *           		(1* + 4B) 1 * * + (5-1) * " "
+# * *         		(2* + 3B) 2 * * + (5-2) * " "
+# * * *       		(3* + 2B) 3 * * + (5-3) * " "
+# * * * *     		(4* + 1B) 4 * * + (5-4) * " "
+# * * * * *   		(5* + 0B) 5 * * + (5-5) * " "
+# '''
+lines = int(input("Enter Lines:  "))
+# input function will take data from the user and always returns string.
+for i in range(1, lines + 1):
+    print("* " * i + (lines - i) * " ")
+# i = 1
+# while i < 6:
+#     print(i * "* " )
+#     i = i + 1
+# print("Process completed")
+
+2)
+
+# * * * * *    		(5* + 0B)    '* ' * (5-0) + " " * 1-1       i = 1
+# * * * *      		(4* + 1B)    '* ' * (5-1) + " " * 2-1       i = 2
+# * * *        		(3* + 2B)    '* ' * (5-2) + " " * 3-1       i = 3
+# * *          		(2* + 3B)    '* ' * (5-3) + " " * 4-1       i = 4
+# *            		(1* + 4B)    '* ' * (5-4) + " " * 5-1       i = 5
+# '''
+# i = 1, i = 5(lines)
+
+lines = int(input("Enter Lines:  "))
+for i in range(1, lines + 1):
+    #print("* " * (lines - i) + " " * (i-1))
+    print("* " * (lines - (i-1)) + " " * (i-1))
+
+3)
+
+#         *                4B + 1*    (5-1)*""+1**          (lines - i) * " " + i * '*'
+#       * *                3B + 2*    (5-2)*""+2**
+#     * * *                2B + 3*    (5-3)*""+3**
+#   * * * *                1B + 4*    (5-4)*""+4**
+# * * * * *                0B + 5*    (5-5)*""+5**
+# i = 1, lines = 5
+
+lines = int(input("Enter lines: "))
+for i in range(1, lines + 1):
+    print((lines - i) * "  " + i * ' *')
+
+4)
+
+# *               *             1* + 7B + 1*
+# * *           * *             2* + 5B + 2*
+# * * *       * * *             3* + 3B + 3*
+# * * * *   * * * *             4* + 1B + 4*
+# * * * * * * * * *             9*
+
+lines = int(input("Enter lines: "))
+for i in range(1, lines):
+
+    print("* " * i + (2*(lines-i) - 1) * " " + (2*(lines-i) - 1) * " " + "* " * i)
+print("* " * (2 * lines - 1))
+
+5)
+
+#      *
+#     ***
+#    *****
+#   *******
+#  *********
+# ***********
+#    *****
+#    *****
+#    *****
+#    *****
+#    *****
+#    *****
+code: 
+
+lines = int(input("Enter lines: "))
+half_part = lines // 2  # 4
+for i in range(1, half_part + 1):
+    print(" " * (half_part - i) + "*" * (2 * i - 1) + " " * (half_part - i))
+for i in range(1, half_part + 1):
+    print(" " * (half_part // 2) + "*" * (half_part - 1))
+

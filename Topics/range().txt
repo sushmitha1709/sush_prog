@@ -1,0 +1,34 @@
+range():
+	The range() function is used to generate a sequence of numbers. range() is a built-in function of Python
+			(OR)
+	Python range() function returns the sequence of the given number between the given range.
+	range() in Python(3.x) is just a renamed version of a function called xrange in Python(2.x).
+	The most common use of range() function in Python is to iterate sequence type (Python range() List, string, etc. ) 
+	with for and while loop.
+ 
+	Python range syntax:
+		range(stop)
+
+		range(start, stop, step)
+	There are three ways you can call range() : 
+		range(stop) takes one argument.
+		range(start, stop) takes two arguments.
+		range(start, stop, step) takes three arguments.
+	Python range() function doesn’t support the float numbers. i.e. user cannot use floating-point or non-integer number in any 
+	of its argument.Users can use only integer numbers. 
+	
+	For example 
+	# using a float number
+	for i in range(3.3):
+    	print(i)
+	o/p:for i in range(3.3):
+	TypeError: 'float' object cannot be interpreted as an integer
+
+	Points to remember about Python range() function : 
+
+	range() function only works with the integers i.e. whole numbers.
+	All arguments must be integers. Users can not pass a string or float number or any other type in a start, stop and step argument of a range().
+	All three arguments can be positive or negative.
+	The step value must not be zero. If a step is zero python raises a ValueError exception.
+	range() is a type in Python
+	Users can access items in a range() by index, just as users do with a list:

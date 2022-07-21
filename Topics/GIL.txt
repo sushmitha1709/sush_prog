@@ -1,0 +1,10 @@
+GIL:
+	GIL stands for Global Interpreter Lock. This is a mutex used for limiting access to python objects and aids in 
+	effective thread synchronization by avoiding deadlocks. GIL helps in achieving multitasking (and not parallel computing). 
+	The following diagram represents how GIL works.
+
+
+	Based on the above diagram, there are three threads. First Thread acquires the GIL first and starts the I/O execution. 
+	When the I/O operations are done, thread 1 releases the acquired GIL which is then taken up by the second thread. 
+	The process repeats and the GIL are used by different threads alternatively until the threads have completed their execution. 
+	The threads not having the GIL lock goes into the waiting state and resumes execution only when it acquires the lock
